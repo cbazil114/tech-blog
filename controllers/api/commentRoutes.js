@@ -18,7 +18,7 @@ router.get('/', withAuth, async (req, res) => {
         }
 });
 
-// Create new post route
+// Create a new comment
 router.post('/', withAuth, async (req, res) => {
   try {
     const newComment = await Comment.create({
